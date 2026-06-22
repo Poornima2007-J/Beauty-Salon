@@ -1,0 +1,152 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:black;
+  color:white;
+  font-family:sans-serif;
+  overflow:hidden;
+}
+
+.start-screen{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:30px;
+}
+
+.start-screen h1{
+  font-size:4rem;
+  color:gold;
+}
+
+.start-screen button{
+  padding:15px 40px;
+  background:gold;
+  border:none;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.scene{
+  width:100%;
+  height:100vh;
+  position:relative;
+  overflow:hidden;
+  background:#050505;
+}
+
+.road{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:200px;
+  background:#1a1a1a;
+}
+
+.salon-building{
+  position:absolute;
+  right:150px;
+  bottom:200px;
+  width:350px;
+  height:400px;
+  background:#222;
+  border:3px solid gold;
+}
+
+.door{
+  position:absolute;
+  bottom:0;
+  left:100px;
+  width:150px;
+  height:250px;
+}
+
+.left-door,
+.right-door{
+  width:75px;
+  height:250px;
+  background:#111;
+  position:absolute;
+  transition:2s;
+}
+
+.left-door{
+  left:0;
+}
+
+.right-door{
+  right:0;
+}
+
+.open-door .left-door{
+  transform:rotateY(80deg);
+}
+
+.open-door .right-door{
+  transform:rotateY(-80deg);
+}
+
+.barber{
+  width:250px;
+  position:absolute;
+  bottom:150px;
+  left:0;
+}
+
+.key{
+  position:absolute;
+  left:900px;
+  bottom:420px;
+  font-size:70px;
+}
+
+.welcome{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.welcome h1{
+  font-size:3rem;
+}
+
+.welcome h2{
+  font-size:5rem;
+  color:gold;
+}
+
+.website{
+  min-height:100vh;
+}
+
+nav{
+  padding:20px;
+  background:#111;
+}
+
+.hero{
+  height:90vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.hero h2{
+  font-size:4rem;
+  margin-bottom:20px;
+}
+
+.hero button{
+  padding:15px 35px;
+  background:gold;
+  border:none;
+}
